@@ -20,10 +20,12 @@ public class PhobosBot {
 
         JDA jda = builder.build();
 
-        jda.addEventListener(new Commands());
+        jda.addEventListener(new BasicCommands());
         jda.addEventListener(new GuildMemberJoin());
-        jda.addEventListener(new EmoteAdd());
-        jda.addEventListener(new TicTacToe());
+        jda.addEventListener(new GuildMemberLeave());
+        jda.addEventListener(new ReportService());
+        //jda.addEventListener(new EmoteAdd());
+        //jda.addEventListener(new TicTacToe());
 
         jda.getPresence().setStatus(OnlineStatus.IDLE);
         jda.getPresence().setActivity(Activity.watching("Max ist blöd"));

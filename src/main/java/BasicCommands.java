@@ -2,7 +2,7 @@ import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-public class Commands extends ListenerAdapter {
+public class BasicCommands extends ListenerAdapter {
 
     public static final String PREFIX = "!";
 
