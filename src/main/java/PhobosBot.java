@@ -10,12 +10,11 @@ public class PhobosBot {
 
     public static void main(String[] args) throws Exception {
 
-        //jda = JDABuilder.createDefault("NjY3MDYwNTgwODU0NjYxMTIx.Xh9Okw.IKR2b7PSbrWMoMUr8SZkf0c7-gs").build();
+        //jda = JDABuilder.createDefault("").build();
 
         JDABuilder builder = JDABuilder.createDefault("")
                 // Enables the bot to update user information / joins / leaves
                 // See https://ci.dv8tion.net/job/JDA/javadoc/net/dv8tion/jda/api/requests/GatewayIntent.html for more
-                //
                 .enableIntents(GatewayIntent.GUILD_MEMBERS);
 
         JDA jda = builder.build();
