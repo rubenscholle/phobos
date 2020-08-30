@@ -1,12 +1,17 @@
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.guild.react.GuildMessageReactionAddEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class ReportService extends ListenerAdapter {
 
     private static final String PREFIX = "!";
     private static int reportCount, reactionCount;
+    private static boolean deleteMessage = false;
+
+    public ReportService(boolean deleteMessage) {
+        setDeleteMessage(deleteMessage);
+    }
 
     public static int getReportCount() {
         return reportCount;
@@ -32,6 +37,14 @@ public class ReportService extends ListenerAdapter {
         ReportService.reactionCount += increments;
     }
 
+    public static boolean isDeleteMessage() {
+        return deleteMessage;
+    }
+
+    public static void setDeleteMessage(boolean deleteMessage) {
+        ReportService.deleteMessage = deleteMessage;
+    }
+
     public static int getReportRatio() {
 
         float reportRatio;
@@ -47,7 +60,7 @@ public class ReportService extends ListenerAdapter {
     }
 
     @Override
-    public void onMessageReactionAdd(MessageReactionAddEvent event) {
+    public void onGuildMessageReactionAdd(GuildMessageReactionAddEvent event) {
 
         if (event.getReactionEmote().getName().equals("🚨")) {
             incrementReactionCount(1);
@@ -55,7 +68,7 @@ public class ReportService extends ListenerAdapter {
     }
 
     @Override
-    public void onMessageReceived(MessageReceivedEvent event) {
+    public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
 
         String reportingPlayer;
         String[] reportMessage;
@@ -93,6 +106,8 @@ public class ReportService extends ListenerAdapter {
                 return;
             }
 
+            if (deleteMessage) event.getChannel().deleteMessageById(event.getMessageId()).queue();
+
             incrementReportCount(1);
 
             serverPart = reportMessage[1];
@@ -128,6 +143,10 @@ public class ReportService extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(statisticsFeed.build()).queue();
             statisticsFeed.clear();
+        }
+
+        if (reportMessage[0].equalsIgnoreCase(PREFIX + "delete")) {
+            event.getChannel().deleteMessageById(event.getMessageId());
         }
     }
 }

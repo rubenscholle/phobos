@@ -15,7 +15,6 @@ public class PhobosBot {
         JDABuilder builder = JDABuilder.createDefault("NjY3MDYwNTgwODU0NjYxMTIx.Xh9Okw.rVHm3rh2z9bTSeFQ6eGqfcALsu8")
                 // Enables the bot to update user information / joins / leaves
                 // See https://ci.dv8tion.net/job/JDA/javadoc/net/dv8tion/jda/api/requests/GatewayIntent.html for more
-                //
                 .enableIntents(GatewayIntent.GUILD_MEMBERS);
 
         JDA jda = builder.build();
@@ -23,7 +22,7 @@ public class PhobosBot {
         jda.addEventListener(new BasicCommands());
         jda.addEventListener(new GuildMemberJoin());
         jda.addEventListener(new GuildMemberLeave());
-        jda.addEventListener(new ReportService());
+        jda.addEventListener(new ReportService(true));
         //jda.addEventListener(new EmoteAdd());
         //jda.addEventListener(new TicTacToe());
 
