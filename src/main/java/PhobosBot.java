@@ -5,6 +5,7 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import javax.security.auth.login.LoginException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class PhobosBot {
@@ -32,6 +33,15 @@ public class PhobosBot {
         SQLParser sql = new SQLParser();
         sql.makeJDBCConnection();
 
+        sql.update("report_count", 1, "count", "1");
+
+        try {
+            ResultSet result = sql.select("report_count");
+            result.next();
+            System.out.println(result.getInt("count"));
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
 //       jda.addEventListener(new BasicCommands());
 //       jda.addEventListener(new GuildMemberJoin());
 //       jda.addEventListener(new GuildMemberLeave());

@@ -1,6 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class SQLParser {
 
@@ -29,6 +27,65 @@ public class SQLParser {
             }
         } catch(SQLException e) {
             System.out.println("Connection error");
+            e.printStackTrace();
+        }
+    }
+
+    public static ResultSet select(String tableName) {
+        String queryStatement;
+        PreparedStatement sqlStatement;
+        ResultSet result = null;
+
+        try {
+            queryStatement = "SELECT * FROM " + tableName;
+            sqlStatement = connection.prepareStatement(queryStatement);
+            result = sqlStatement.executeQuery();
+
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    public static void insert(String tableName, String valueString) {
+        String queryStatement = "INSERT INTO " + tableName + " VALUES " + valueString;
+        PreparedStatement sqlStatement;
+
+        try {
+            sqlStatement = connection.prepareStatement(queryStatement);
+            sqlStatement.executeUpdate();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void update(String tableName, int id, String columnName, String valueString) {
+        String queryStatement = "UPDATE " + tableName +
+                " SET " + columnName +
+                " = " + valueString +
+                " WHERE id = " + id;
+        PreparedStatement sqlStatement;
+
+        try {
+            sqlStatement = connection.prepareStatement(queryStatement);
+            sqlStatement.executeUpdate();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void update(String tableName, int id, String columnName, int value) {
+        String queryStatement = "UPDATE " + tableName +
+                " SET " + columnName +
+                " = " + value +
+                " WHERE id = " + id;
+        PreparedStatement sqlStatement;
+
+        try {
+            sqlStatement = connection.prepareStatement(queryStatement);
+            sqlStatement.executeUpdate();
+        } catch(SQLException e) {
             e.printStackTrace();
         }
     }
