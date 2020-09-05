@@ -160,6 +160,21 @@ public class ReportService extends ListenerAdapter {
 
         if (reportMessage[0].equalsIgnoreCase(PREFIX + "statistik")) {
 
+            try {
+                sql.makeJDBCConnection();
+                result = sql.select("report_count");
+                result.next();
+                setReportCount(result.getInt("count"));
+                result.close();
+
+                result = sql.select("reaction_count");
+                result.next();
+                setReactionCount(result.getInt("count"));
+                result.close();
+            } catch(SQLException e) {
+                e.printStackTrace();
+            }
+
             int reportRatio = getReportRatio();
 
             EmbedBuilder statisticsFeed = new EmbedBuilder();
