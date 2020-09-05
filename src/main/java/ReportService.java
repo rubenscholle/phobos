@@ -3,11 +3,15 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.guild.react.GuildMessageReactionAddEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class ReportService extends ListenerAdapter {
 
     private static final String PREFIX = "!";
     private static int reportCount, reactionCount;
     private static boolean deleteMessage = false;
+    private static SQLParser sql = new SQLParser();
 
     public ReportService(boolean deleteMessage) {
         setDeleteMessage(deleteMessage);
@@ -62,8 +66,21 @@ public class ReportService extends ListenerAdapter {
     @Override
     public void onGuildMessageReactionAdd(GuildMessageReactionAddEvent event) {
 
+        ResultSet result;
+
         if (event.getReactionEmote().getName().equals("🚨")) {
-            incrementReactionCount(1);
+            try {
+                sql.makeJDBCConnection();
+                result = sql.select("reaction_count");
+                result.next();
+                setReactionCount(result.getInt("count"));
+                result.close();
+
+                incrementReactionCount(1);
+                sql.update("reaction_count", 1, "count", getReactionCount());
+            } catch(SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -74,7 +91,7 @@ public class ReportService extends ListenerAdapter {
         String[] reportMessage;
         String warningMessage;
         String serverPart, playerPart, reportPart;
-        int reportRatio;
+        ResultSet result;
 
         if (event.getAuthor().isBot()) {
             return;
@@ -108,7 +125,19 @@ public class ReportService extends ListenerAdapter {
 
             if (deleteMessage) event.getChannel().deleteMessageById(event.getMessageId()).queue();
 
-            incrementReportCount(1);
+
+            try {
+                sql.makeJDBCConnection();
+                result = sql.select("report_count");
+                result.next();
+                setReportCount(result.getInt("count"));
+                result.close();
+
+                incrementReportCount(1);
+                sql.update("report_count", 1, "count", getReportCount());
+            } catch(SQLException e) {
+                e.printStackTrace();
+            }
 
             serverPart = reportMessage[1];
             playerPart = reportMessage[2];
@@ -131,7 +160,7 @@ public class ReportService extends ListenerAdapter {
 
         if (reportMessage[0].equalsIgnoreCase(PREFIX + "statistik")) {
 
-            reportRatio = getReportRatio();
+            int reportRatio = getReportRatio();
 
             EmbedBuilder statisticsFeed = new EmbedBuilder();
             statisticsFeed.setTitle("Zeit für etwas Statistik, wooot!:");
