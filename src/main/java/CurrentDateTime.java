@@ -19,7 +19,7 @@ public class CurrentDateTime {
         return sqlFormat;
     }
 
-    public String get(String dateTimeFormat) {
+    public static String get(String dateTimeFormat) {
 
         DateTimeFormatter dtf;
         LocalDateTime now = LocalDateTime.now();

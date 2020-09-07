@@ -34,6 +34,7 @@ public class PhobosBot {
        jda.addEventListener(new GuildMemberJoin());
        jda.addEventListener(new GuildMemberLeave());
        jda.addEventListener(new ReportListener(true));
+        jda.addEventListener(new BotListener());
        //jda.addEventListener(new EmoteAdd());
        //jda.addEventListener(new TicTacToe());
 
