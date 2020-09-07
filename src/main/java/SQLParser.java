@@ -4,7 +4,17 @@ public class SQLParser {
 
     static Connection connection = null;
 
-    public static void makeJDBCConnection() {
+    // Singleton design pattern for class SQLParser
+    private static final SQLParser instance = new SQLParser();
+
+    private SQLParser() {}
+
+    public static SQLParser getInstance() {
+
+        return instance;
+    }
+
+    public static void connect() {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -25,8 +35,22 @@ public class SQLParser {
             } else {
                 System.out.println("Connection failed");
             }
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             System.out.println("Connection error");
+            e.printStackTrace();
+        }
+    }
+
+    public static void disconnect() {
+
+        try {
+            if (connection != null) {
+                connection.close();
+                System.out.println("Connection closed");
+            }  else {
+                System.out.println("Connection closing failed. No connection established yet");
+            }
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -48,8 +72,7 @@ public class SQLParser {
         return result;
     }
 
-    public static void insert(String tableName, String valueString) {
-        String queryStatement = "INSERT INTO " + tableName + " VALUES " + valueString;
+    public static void insert(String queryStatement) {
         PreparedStatement sqlStatement;
 
         try {
@@ -60,26 +83,7 @@ public class SQLParser {
         }
     }
 
-    public static void update(String tableName, int id, String columnName, String valueString) {
-        String queryStatement = "UPDATE " + tableName +
-                " SET " + columnName +
-                " = " + valueString +
-                " WHERE id = " + id;
-        PreparedStatement sqlStatement;
-
-        try {
-            sqlStatement = connection.prepareStatement(queryStatement);
-            sqlStatement.executeUpdate();
-        } catch(SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void update(String tableName, int id, String columnName, int value) {
-        String queryStatement = "UPDATE " + tableName +
-                " SET " + columnName +
-                " = " + value +
-                " WHERE id = " + id;
+    public static void update(String queryStatement) {
         PreparedStatement sqlStatement;
 
         try {
