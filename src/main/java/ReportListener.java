@@ -37,7 +37,7 @@ public class ReportListener extends ListenerAdapter {
             reportCount++;
             queryStatement = "Update report_count SET count = "
                     + reportCount +
-                    " WHERE id = 1";
+                    " WHERE id = 1;";
 
             SQLParser.update(queryStatement);
             SQLParser.disconnect();

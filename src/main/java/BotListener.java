@@ -31,9 +31,11 @@ public class BotListener extends ListenerAdapter {
                     //try {
                         SQLParser.connect();
                         queryStatement = "INSERT INTO messages " +
-                                "(discord_id, message_time) VALUES " +
-                                "('" + messageId + "', "+
-                                "'" + currentTime + "')";
+                                "(discord_id, message_time) VALUES ('"
+                                + messageId +
+                                "', '"
+                                + currentTime +
+                                "');";
                         SQLParser.insert(queryStatement);
                         SQLParser.disconnect();
                     //} catch (SQLException e) {
