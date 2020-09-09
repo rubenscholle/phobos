@@ -56,7 +56,7 @@ public class ReactionListener extends ListenerAdapter {
         if (event.getReactionEmote().getName().equals(getReactionToListen())) {
 
             messageId = event.getMessageId();
-            currentTime = CurrentDateTime.get(CurrentDateTime.getSqlFormat());
+            currentTime = CurrentDateTime.getTime(CurrentDateTime.getSqlFormat());
 
             incrementReactionCount();
 

@@ -27,6 +27,7 @@ public class SQLParser {
 
         try {
             // ToDo read account data from file (xml/json) and put it into .gitignore
+            // Or from pom.xml
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/phobos?serverTimezone=UTC",
                     "phobos", "phobos91.PzG");

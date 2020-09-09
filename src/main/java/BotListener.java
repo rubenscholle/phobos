@@ -26,12 +26,12 @@ public class BotListener extends ListenerAdapter {
                 if (firstEmbed.getTitle().startsWith("Spielermeldung durch")) {
 
                     messageId = event.getMessageId();
-                    currentTime = CurrentDateTime.get(CurrentDateTime.getSqlFormat());
+                    currentTime = CurrentDateTime.getTime(CurrentDateTime.getSqlFormat());
 
                     //try {
                         SQLParser.connect();
                         queryStatement = "INSERT INTO messages " +
-                                "(discord_id, message_time) VALUES ('"
+                                "(discord_id, report_time) VALUES ('"
                                 + messageId +
                                 "', '"
                                 + currentTime +
