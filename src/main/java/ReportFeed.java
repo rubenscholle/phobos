@@ -6,14 +6,7 @@ public class ReportFeed {
     private static final EmbedBuilder reportFeed = new EmbedBuilder();
 
     // Singleton design pattern for class ReportFeed
-    private static final ReportFeed instance = new ReportFeed();
-
     private ReportFeed() {}
-
-    public static ReportFeed getInstance() {
-
-        return instance;
-    }
 
     public static void send(
             String reportingPlayer,
