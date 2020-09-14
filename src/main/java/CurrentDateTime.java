@@ -2,7 +2,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 public class CurrentDateTime {
@@ -26,53 +28,88 @@ public class CurrentDateTime {
         return dateTimeFormatter.format(now);
     }
 
-    public static String getTimeDifference(String timeString1, String timeString2) {
+    public static long getTimeDifference(String timeString1, String timeString2) {
 
         // Get time difference between twi time strings in MM:SS format
-        String timeDifference;
-        SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("mm:ss");
+        long timeDifference;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date dateTime1;
         Date dateTime2;
 
         try {
             // Times as Strings to times as Dates (datetime)
-            dateTime1 = simpleDateFormat2.parse(timeString1);
-            dateTime2 = simpleDateFormat1.parse(timeString2);
+            dateTime1 = simpleDateFormat.parse(timeString1);
+            dateTime2 = simpleDateFormat.parse(timeString2);
 
-            // Time difference between dateTime1 and dateTime2 to time difference as String
-            timeDifference = simpleDateFormat2.format((dateTime2.getTime() - dateTime1.getTime()));
+            // Time difference between dateTime1 and dateTime2 to time difference as long
+            timeDifference = (dateTime2.getTime() - dateTime1.getTime());
 
             return timeDifference;
 
         } catch (ParseException e) {
             e.printStackTrace();
-            return null;
+            // Lowest possible long from .geTTime()
+            return -3600000;
         }
     }
 
-    public static String getAverageTime(List<String> times) {
+    public static String getAverageTime(List<Long> times) {
 
         // Get the average time (as String)from a List of time Strings
-        double timeSum = 0;
-        long currentTime;
+        long timeSum = 0;
         double averageTime;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
 
-        for (String timeDifference : times) {
-            try {
-                // Time as String to time as long for calculation
-                currentTime = simpleDateFormat.parse(timeDifference).getTime();
-                timeSum += currentTime;
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+        for (long time : times) {
+            System.out.println(time);
+            timeSum += time;
         }
 
         // Calculate average (statistical mean) time
-        averageTime = timeSum / times.size();
+        averageTime = (double) timeSum / times.size();
+        System.out.println(averageTime);
 
-        // Return the average time as String
+        // Return the average time as mm:ss String
         return simpleDateFormat.format(averageTime);
     }
+
+    public static HashMap<String, List<Long>> getGroupedTimes(List<Long> times) {
+
+        // Get grouped times as HashMap
+        HashMap<String, List<Long>> groupedTimes = new HashMap<>();
+        List<Long> currentList = new ArrayList<>();
+
+        // Initialize groupedTimes HashMap with empty Lists
+        groupedTimes.put("<5 min", currentList);
+        groupedTimes.put("<15 min", currentList);
+        groupedTimes.put("<30 min", currentList);
+        groupedTimes.put("<60 min", currentList);
+        groupedTimes.put(">60 min", currentList);
+
+        for (long time : times) {
+            if (time < 300000) {
+                currentList = groupedTimes.get("<5 min");
+                currentList.add(time);
+                groupedTimes.put("<5 min", currentList);
+            } else if (time < 900000) {
+                currentList = groupedTimes.get("<15 min");
+                currentList.add(time);
+                groupedTimes.put("<15 min", currentList);
+            } else if (time < 1800000) {
+                currentList = groupedTimes.get("<30 min");
+                currentList.add(time);
+                groupedTimes.put("<30 min", currentList);
+            } else if (time < 3600000) {
+                currentList = groupedTimes.get("<60 min");
+                currentList.add(time);
+                groupedTimes.put("<60 min", currentList);
+            } else {
+                currentList = groupedTimes.get(">60 min");
+                currentList.add(time);
+                groupedTimes.put(">60 min", currentList);
+            }
+        }
+
+      return groupedTimes;
+  }
 }
