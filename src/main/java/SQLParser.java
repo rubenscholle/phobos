@@ -5,17 +5,11 @@ public class SQLParser {
     static Connection connection = null;
 
     // Singleton design pattern for class SQLParser
-    private static final SQLParser instance = new SQLParser();
-
     private SQLParser() {}
-
-    public static SQLParser getInstance() {
-
-        return instance;
-    }
 
     public static void connect() {
 
+        // Establish connection to a specific database
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("JDBC driver registration successful");
@@ -44,6 +38,7 @@ public class SQLParser {
 
     public static void disconnect() {
 
+        // Close current database connection
         try {
             if (connection != null) {
                 connection.close();
@@ -57,6 +52,8 @@ public class SQLParser {
     }
 
     public static ResultSet select(String tableName) {
+
+        // SELECT query to currently connected database
         String queryStatement;
         PreparedStatement sqlStatement;
         ResultSet result = null;
@@ -74,6 +71,8 @@ public class SQLParser {
     }
 
     public static void insert(String queryStatement) {
+
+        // INSERT query to currently connected database
         PreparedStatement sqlStatement;
 
         try {
@@ -85,6 +84,8 @@ public class SQLParser {
     }
 
     public static void update(String queryStatement) {
+
+        // UPDATE query to currently connected database
         PreparedStatement sqlStatement;
 
         try {
