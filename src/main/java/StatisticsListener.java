@@ -83,8 +83,6 @@ public class StatisticsListener extends ListenerAdapter {
                 groupedReactions.put("<60 min", 0);
                 groupedReactions.put(">60 min", 0);
 
-
-
                 for (long time : timeDifferences) {
                     if (time < 300000) {
                         currentItem = groupedReactions.get("<5 min");
@@ -127,13 +125,13 @@ public class StatisticsListener extends ListenerAdapter {
                                 " (" + (int) reactionRatio + "%)**\n\n" +
                                 "Reaktionen <5 min: **" + groupedReactions.get("<5 min") +
                                 " (" + groupedReactionRatios.get("<5 min") + "%)**\n" +
-                                "Reaktionen <5 min: **" + groupedReactions.get("<15 min") +
+                                "Reaktionen <15 min: **" + groupedReactions.get("<15 min") +
                                 " (" + groupedReactionRatios.get("<15 min") + "%)**\n" +
-                                "Reaktionen <5 min: **" + groupedReactions.get("<30 min") +
+                                "Reaktionen <30 min: **" + groupedReactions.get("<30 min") +
                                 " (" + groupedReactionRatios.get("<30 min") + "%)**\n" +
-                                "Reaktionen <5 min: **" + groupedReactions.get("<60 min") +
+                                "Reaktionen <60 min: **" + groupedReactions.get("<60 min") +
                                 " (" + groupedReactionRatios.get("<60 min") + "%)**\n" +
-                                "Reaktionen <5 min: **" + groupedReactions.get(">60 min") +
+                                "Reaktionen >60 min: **" + groupedReactions.get(">60 min") +
                                 " (" + groupedReactionRatios.get(">60 min") + "%)**\n\n" +
                                 "Durchschnittliche Reaktionszeit (mm:ss): **" + averageTime + "**");
 
@@ -144,8 +142,6 @@ public class StatisticsListener extends ListenerAdapter {
             } catch(SQLException e) {
                 e.printStackTrace();
             }
-
-
         }
     }
 }
