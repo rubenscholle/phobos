@@ -8,14 +8,7 @@ import java.util.List;
 public class CurrentDateTime {
 
     // Singleton design pattern for class CurrentDateTime
-    //private static final CurrentDateTime instance = new CurrentDateTime();
-
     private CurrentDateTime() {}
-
-//   public static CurrentDateTime getInstance() {
-
-//       return instance;
-//   }
 
     private static final String sqlFormat = "YYYY-MM-dd hh:mm:ss";
 
@@ -25,6 +18,7 @@ public class CurrentDateTime {
 
     public static String getTime(String dateTimeFormat) {
 
+        // Get current System Time as String
         DateTimeFormatter dateTimeFormatter;
         LocalDateTime now = LocalDateTime.now();
 
@@ -32,19 +26,22 @@ public class CurrentDateTime {
         return dateTimeFormatter.format(now);
     }
 
-    public static String getTimeDifference(String time1, String time2) {
+    public static String getTimeDifference(String timeString1, String timeString2) {
 
+        // Get time difference between twi time strings in MM:SS format
         String timeDifference;
         SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("mm:ss");
-        Date d1;
-        Date d2;
+        Date dateTime1;
+        Date dateTime2;
 
         try {
-            d1 = simpleDateFormat1.parse(time1);
-            d2 = simpleDateFormat1.parse(time2);
+            // Times as Strings to times as Dates (datetime)
+            dateTime1 = simpleDateFormat2.parse(timeString1);
+            dateTime2 = simpleDateFormat1.parse(timeString2);
 
-            timeDifference = simpleDateFormat2.format((d2.getTime() - d1.getTime()));
+            // Time difference between dateTime1 and dateTime2 to time difference as String
+            timeDifference = simpleDateFormat2.format((dateTime2.getTime() - dateTime1.getTime()));
 
             return timeDifference;
 
@@ -54,15 +51,17 @@ public class CurrentDateTime {
         }
     }
 
-    public static String getAverageTime(List<String> timeDifferences) {
+    public static String getAverageTime(List<String> times) {
 
+        // Get the average time (as String)from a List of time Strings
         double timeSum = 0;
         long currentTime;
         double averageTime;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
 
-        for (String timeDifference : timeDifferences) {
+        for (String timeDifference : times) {
             try {
+                // Time as String to time as long for calculation
                 currentTime = simpleDateFormat.parse(timeDifference).getTime();
                 timeSum += currentTime;
             } catch (ParseException e) {
@@ -70,7 +69,10 @@ public class CurrentDateTime {
             }
         }
 
-        averageTime = timeSum / timeDifferences.size();
+        // Calculate average (statistical mean) time
+        averageTime = timeSum / times.size();
+
+        // Return the average time as String
         return simpleDateFormat.format(averageTime);
     }
 }
