@@ -8,6 +8,7 @@ public class ReportFeed {
     // Singleton design pattern for class ReportFeed
     private ReportFeed() {}
 
+    // Send an embedded player report message to the Bot
     public static void send(
             String reportingPlayer,
             String serverPart,
