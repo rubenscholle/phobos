@@ -28,7 +28,7 @@ public class ReactionListener extends ListenerAdapter {
 
         try {
             SQLParser.connect();
-            result = SQLParser.select("report_count");
+            result = SQLParser.select("reaction_count");
             result.next();
             reactionCount = result.getInt("count");
             result.close();
