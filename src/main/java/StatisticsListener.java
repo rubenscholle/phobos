@@ -83,6 +83,7 @@ public class StatisticsListener extends ListenerAdapter {
                 groupedReactions.put("<60 min", 0);
                 groupedReactions.put(">60 min", 0);
 
+                //ToDo work with fall through switch
                 for (long time : timeDifferences) {
                     if (time < 300000) {
                         currentItem = groupedReactions.get("<5 min");
