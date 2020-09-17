@@ -118,6 +118,6 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 # properties.xml
-src/main/resources/properties.xml
+/src/main/resources/properties.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,maven
