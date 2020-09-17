@@ -9,9 +9,10 @@ public class SQLParser {
 
     public static void connect() {
 
+        PropertiesInjector propertiesInjector = new PropertiesInjector("src/main/resources/properties.xml");
         // Establish connection to a specific database
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName(propertiesInjector.getDb_driver());
             System.out.println("JDBC driver registration successful");
         } catch (ClassNotFoundException e) {
             System.out.println("JDBC driver not found. Check Maven dependency");
@@ -20,11 +21,10 @@ public class SQLParser {
         }
 
         try {
-            // ToDo read account data from file (xml/json) and put it into .gitignore
-            // Or from pom.xml
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/phobos?serverTimezone=UTC",
-                    "phobos", "phobos91.PzG");
+                    propertiesInjector.getDb_server(),
+                    propertiesInjector.getDb_user(),
+                    propertiesInjector.getDb_password());
             if (connection != null) {
                 System.out.println("Connection successful");
             } else {
