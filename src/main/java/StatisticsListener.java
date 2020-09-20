@@ -32,12 +32,9 @@ public class StatisticsListener extends ListenerAdapter {
         int currentValue;
 
         // Bots are not allowed to make this command
-        if (event.getAuthor().isBot()) {
-            return;
-        }
+        if (event.getAuthor().isBot()) return;
 
         commandMessage = event.getMessage().getContentRaw().split(" ");
-
         if (commandMessage[0].equalsIgnoreCase(PREFIX + "statistik")) {
 
             try {

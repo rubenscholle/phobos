@@ -46,6 +46,7 @@ public class ReactionListener extends ListenerAdapter {
         }
     }
 
+    // On reaction defined in the declaration of the class, the reaction counter in the database is incremented
     @Override
     public void onGuildMessageReactionAdd(GuildMessageReactionAddEvent event) {
 
@@ -60,7 +61,6 @@ public class ReactionListener extends ListenerAdapter {
 
             incrementReactionCount();
 
-            //try {
             SQLParser.connect();
             queryStatement = "Update messages SET reaction_time = '"
                     + currentTime +
@@ -69,10 +69,6 @@ public class ReactionListener extends ListenerAdapter {
                     "';";
             SQLParser.insert(queryStatement);
             SQLParser.disconnect();
-            //} catch (SQLException e) {
-            //    e.printStackTrace();
-            //}
-
         }
     }
 }

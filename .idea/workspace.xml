@@ -20,11 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766946e8-0ee5-4765-9cac-ed8aa7b453aa" name="Default Changelist" comment="Set new token">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PropertiesInjector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/template.properties.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmoteAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PhobosBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PhobosBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReactionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SQLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600358747147</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added properties.xml to .gitignore">
+      <created>1600358784489</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358784489</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added class PropertiesInjector to read in bot token and database connection settings">
+      <created>1600358979324</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358979324</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,7 +409,8 @@
     <MESSAGE value="Minor bug fix to class StatisticsListener" />
     <MESSAGE value="Updated gitignore" />
     <MESSAGE value="Added properties.xml to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added properties.xml to .gitignore" />
+    <MESSAGE value="Added class PropertiesInjector to read in bot token and database connection settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added class PropertiesInjector to read in bot token and database connection settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="550" y="58" key="#Java" timestamp="1597687172113">
@@ -399,11 +421,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597686254511" />
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1600357781717">
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1600505945062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600357781717" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600505945062" />
     <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598881475287" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600584457380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600584457380" />
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1598199354575">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -421,29 +447,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="417" width="528" height="205" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598621923689" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1600358510670">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1600586336606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600358510670" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600078599415" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1600358510670">
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1600586336606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600358510670" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600078599415" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1600358510670">
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1600586336606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600358510670" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600078599415" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1600358510670">
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1600586336606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600358510670" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600078599415" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1600272739608">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -488,10 +514,15 @@
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600071543157" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598622114719" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598621761915">
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600504194115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600504194115" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598621761915" />
+    <state x="505" y="255" width="909" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600506806987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="505" y="255" width="909" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600506806987" />
     <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1598698387011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -513,6 +544,10 @@
           <line>78</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -16,7 +16,7 @@ public class ReportFeed {
             String reportPart,
             TextChannel channel) {
 
-        reportFeed.setTitle("Spielermeldung durch @" + reportingPlayer + ":");
+        reportFeed.setTitle("Spielermeldung durch " + reportingPlayer + ":");
         reportFeed.setDescription(
                 "Server: **" + serverPart + "**\n" +
                         "Spieler: **" + playerPart + "**\n" +

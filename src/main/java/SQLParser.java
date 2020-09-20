@@ -7,10 +7,11 @@ public class SQLParser {
     // Singleton design pattern for class SQLParser
     private SQLParser() {}
 
+    // Establish connection to a specific database
     public static void connect() {
 
         PropertiesInjector propertiesInjector = new PropertiesInjector("src/main/resources/properties.xml");
-        // Establish connection to a specific database
+
         try {
             Class.forName(propertiesInjector.getDb_driver());
             System.out.println("JDBC driver registration successful");
@@ -36,9 +37,9 @@ public class SQLParser {
         }
     }
 
+    // Close current database connection
     public static void disconnect() {
 
-        // Close current database connection
         try {
             if (connection != null) {
                 connection.close();
@@ -51,9 +52,9 @@ public class SQLParser {
         }
     }
 
+    // SELECT query to currently connected database
     public static ResultSet select(String tableName) {
 
-        // SELECT query to currently connected database
         String queryStatement;
         PreparedStatement sqlStatement;
         ResultSet result = null;
@@ -70,9 +71,9 @@ public class SQLParser {
         return result;
     }
 
+    // INSERT query to currently connected database
     public static void insert(String queryStatement) {
 
-        // INSERT query to currently connected database
         PreparedStatement sqlStatement;
 
         try {
@@ -83,9 +84,9 @@ public class SQLParser {
         }
     }
 
+    // UPDATE query to currently connected database
     public static void update(String queryStatement) {
 
-        // UPDATE query to currently connected database
         PreparedStatement sqlStatement;
 
         try {

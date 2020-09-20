@@ -18,9 +18,9 @@ public class CurrentDateTime {
         return sqlFormat;
     }
 
+    // Get current System Time as String
     public static String getTime(String dateTimeFormat) {
 
-        // Get current System Time as String
         DateTimeFormatter dateTimeFormatter;
         LocalDateTime now = LocalDateTime.now();
 
@@ -28,9 +28,9 @@ public class CurrentDateTime {
         return dateTimeFormatter.format(now);
     }
 
+    // Get time difference between two time strings in MM:SS format
     public static long getTimeDifference(String timeString1, String timeString2) {
 
-        // Get time difference between twi time strings in MM:SS format
         long timeDifference;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date dateTime1;
@@ -48,14 +48,14 @@ public class CurrentDateTime {
 
         } catch (ParseException e) {
             e.printStackTrace();
-            // Lowest possible long from .geTTime()
+            // Lowest possible long from .getTime()
             return -3600000;
         }
     }
 
+    // Get the average time (as String) from a List of time Strings
     public static String getAverageTime(List<Long> times) {
 
-        // Get the average time (as String)from a List of time Strings
         long timeSum = 0;
         double averageTime;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
@@ -73,9 +73,9 @@ public class CurrentDateTime {
         return simpleDateFormat.format(averageTime);
     }
 
+    // Get grouped times as HashMap
     public static HashMap<String, List<Long>> getGroupedTimes(List<Long> times) {
 
-        // Get grouped times as HashMap
         HashMap<String, List<Long>> groupedTimes = new HashMap<>();
         List<Long> currentList = new ArrayList<>();
 
