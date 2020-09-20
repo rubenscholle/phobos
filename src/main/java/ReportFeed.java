@@ -6,15 +6,9 @@ public class ReportFeed {
     private static final EmbedBuilder reportFeed = new EmbedBuilder();
 
     // Singleton design pattern for class ReportFeed
-    private static final ReportFeed instance = new ReportFeed();
-
     private ReportFeed() {}
 
-    public static ReportFeed getInstance() {
-
-        return instance;
-    }
-
+    // Send an embedded player report message to the Bot
     public static void send(
             String reportingPlayer,
             String serverPart,
@@ -22,7 +16,7 @@ public class ReportFeed {
             String reportPart,
             TextChannel channel) {
 
-        reportFeed.setTitle("Spielermeldung durch @" + reportingPlayer + ":");
+        reportFeed.setTitle("Spielermeldung durch " + reportingPlayer + ":");
         reportFeed.setDescription(
                 "Server: **" + serverPart + "**\n" +
                         "Spieler: **" + playerPart + "**\n" +

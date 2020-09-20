@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Integration" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="766946e8-0ee5-4765-9cac-ed8aa7b453aa" name="Default Changelist" comment="Set new token">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmoteAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PhobosBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PhobosBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReactionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLParser.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Staging" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\IntelliJ 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gEhzfNNYnEx9UCbC1SflOtHjRk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java_test/SQLParser" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ruben\OneDrive\Projects\phobos\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PhobosBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PhobosBot" />
+      <module name="phobos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PhobosBot" />
+        <item itemvalue="Application.PhobosBot" />
+        <item itemvalue="Application.PhobosBot" />
+        <item itemvalue="Application.PhobosBot" />
+        <item itemvalue="Application.PhobosBot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="766946e8-0ee5-4765-9cac-ed8aa7b453aa" name="Default Changelist" comment="" />
+      <created>1597685923160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597685923160</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1598621665082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598621665082</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Set new token">
+      <created>1598623013476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598623013476</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Split class Commands into ReportService and BasicCommands">
+      <created>1598698292815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598698292815</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Split class Commands into ReportService and BasicCommands">
+      <created>1598698452816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598698452816</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Deleted Commands.java">
+      <created>1598698617677</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598698617677</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Deleted Commands.java">
+      <created>1598719596772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598719596772</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Hid Token for push to Repo">
+      <created>1598719865022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598719865022</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Hid Token for push to Repo">
+      <created>1598719910693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598719910693</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ReportService may now auto delete report messages">
+      <created>1598767324187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598767324187</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ReportService may now auto delete report messages">
+      <created>1598773626571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598773626571</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ReportService may now auto delete report messages">
+      <created>1598773842783</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598773842783</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ReportService may now auto delete report messages">
+      <created>1598880103509</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598880103509</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ReportService may now auto delete report messages">
+      <created>1599061775982</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599061775982</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added SQLParser class to connect to MySQL database">
+      <created>1599294185193</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599294185193</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added methods to select, insert &amp; update tables in SQLParser class">
+      <created>1599299230497</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599299230497</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Class ReportService now updates the database on report/reaction">
+      <created>1599300631426</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599300631426</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Class ReportService &quot;!statistik&quot; now gets values from the database">
+      <created>1599300817640</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599300817640</updated>
+    </task>
+    <task id="LOCAL-00018" summary="CurrentDateTime/SQLParser are now Singleton helper classes. New helper class ReportFeed. ReportService is now ReportListener">
+      <created>1599495904748</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599495904748</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Class BotListener added.&#10;Minor bug fix to Class CurrentDateTime">
+      <created>1599498271857</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599498271857</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Class ReactionListener added.&#10;Minor bug fix to Classes BotListener/ReportListener (SQL Query Syntax)">
+      <created>1599499494081</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599499494081</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated class CurrentDateTime and added class StatisticsListener to calculate the time until reaction and average reaction time">
+      <created>1599670713384</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599670713384</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updated class CurrentDateTime and added class StatisticsListener to calculate the time until reaction and average reaction time">
+      <created>1599670771881</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1599670771881</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Minor bug fixed in class ReactionListener">
+      <created>1600071480004</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600071480004</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated gitignore to ignore the target folder">
+      <created>1600071511912</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600071511912</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updated Utility Class CurrentDateTime">
+      <created>1600074187198</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1600074187198</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updated Singleton Pattern of Utility Class RepordFeed">
+      <created>1600074285635</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1600074285635</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated Singleton Pattern of Utility Class RepordFeed">
+      <created>1600074330797</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1600074330797</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updated Singleton Pattern of Utility Class SQLParser">
+      <created>1600074445243</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1600074445243</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Utility class CurrentDateTime simplified (works with longs only now) and class StatisticsListener also reports grouped reaction values/ratios">
+      <created>1600081447728</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1600081447728</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Minor bug fix to class StatisticsListener">
+      <created>1600090633539</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1600090633539</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updated gitignore">
+      <created>1600270184555</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1600270184555</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Updated gitignore">
+      <created>1600270318697</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1600270318697</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added properties.xml to .gitignore">
+      <created>1600358747147</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358747147</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added properties.xml to .gitignore">
+      <created>1600358784489</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358784489</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added class PropertiesInjector to read in bot token and database connection settings">
+      <created>1600358979324</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1600358979324</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Integration" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../mercury" />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Set new token" />
+    <MESSAGE value="Split class Commands into ReportService and BasicCommands" />
+    <MESSAGE value="Deleted Commands.java" />
+    <MESSAGE value="Hid Token for push to Repo" />
+    <MESSAGE value="ReportService may now auto delete report messages" />
+    <MESSAGE value="Added SQLParser class to connect to MySQL database" />
+    <MESSAGE value="Added methods to select, insert &amp; update tables in SQLParser class" />
+    <MESSAGE value="Class ReportService now updates the database on report/reaction" />
+    <MESSAGE value="Class ReportService &quot;!statistik&quot; now gets values from the database" />
+    <MESSAGE value="CurrentDateTime/SQLParser are now Singleton helper classes. New helper class ReportFeed. ReportService is now ReportListener" />
+    <MESSAGE value="Class BotListener added.&#10;Minor bug fix to Class CurrentDateTime" />
+    <MESSAGE value="Class ReactionListener added.&#10;Minor bug fix to Classes BotListener/ReportListener (SQL Query Syntax)" />
+    <MESSAGE value="Updated class CurrentDateTime and added class StatisticsListener to calculate the time until reaction and average reaction time" />
+    <MESSAGE value="Minor bug fixed in class ReactionListener" />
+    <MESSAGE value="Updated gitignore to ignore the target folder" />
+    <MESSAGE value="Updated Utility Class CurrentDateTime" />
+    <MESSAGE value="Updated Singleton Pattern of Utility Class RepordFeed" />
+    <MESSAGE value="Updated Singleton Pattern of Utility Class SQLParser" />
+    <MESSAGE value="Utility class CurrentDateTime simplified (works with longs only now) and class StatisticsListener also reports grouped reaction values/ratios" />
+    <MESSAGE value="Minor bug fix to class StatisticsListener" />
+    <MESSAGE value="Updated gitignore" />
+    <MESSAGE value="Added properties.xml to .gitignore" />
+    <MESSAGE value="Added class PropertiesInjector to read in bot token and database connection settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added class PropertiesInjector to read in bot token and database connection settings" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="550" y="58" key="#Java" timestamp="1597687172113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="550" y="58" key="#Java/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597687172113" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1597686254511">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597686254511" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1600505945062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600505945062" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598881475287" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600584457380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600584457380" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1598199354575">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1598199354575" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1600076732411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600076732411" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598621845738" />
+    <state x="722" y="419" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1598880096164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="419" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598880096164" />
+    <state x="838" y="417" width="528" height="205" key="Github.ShareDialog" timestamp="1598621923689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="417" width="528" height="205" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598621923689" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1600586336606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1600586336606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1600586336606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1600586336606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1600272739608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600272739608" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1600272739608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600272739608" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1600272739608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600272739608" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1600272739608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600272739608" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1597686976846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597686976846" />
+    <state x="325" y="281" width="1428" height="478" key="MultipleFileMergeDialog" timestamp="1600071606700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="325" y="281" width="1428" height="478" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600071606700" />
+    <state x="744" y="240" key="RollbackChangesDialog" timestamp="1600269983536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="240" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600269983536" />
+    <state x="1180" y="289" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598880036724" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1599500431011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599500431011" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598621033583" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600071543157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600071543157" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598622114719" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600504194115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600504194115" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598621761915" />
+    <state x="505" y="255" width="909" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600506806987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="505" y="255" width="909" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600506806987" />
+    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1598698387011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598698387011" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598621717728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598621717728" />
+    <state x="342" y="180" key="new project wizard" timestamp="1600076733705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="180" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600076733705" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TicTacToe.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

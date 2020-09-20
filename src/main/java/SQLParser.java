@@ -5,19 +5,15 @@ public class SQLParser {
     static Connection connection = null;
 
     // Singleton design pattern for class SQLParser
-    private static final SQLParser instance = new SQLParser();
-
     private SQLParser() {}
 
-    public static SQLParser getInstance() {
-
-        return instance;
-    }
-
+    // Establish connection to a specific database
     public static void connect() {
 
+        PropertiesInjector propertiesInjector = new PropertiesInjector("src/main/resources/properties.xml");
+
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName(propertiesInjector.getDb_driver());
             System.out.println("JDBC driver registration successful");
         } catch (ClassNotFoundException e) {
             System.out.println("JDBC driver not found. Check Maven dependency");
@@ -26,11 +22,10 @@ public class SQLParser {
         }
 
         try {
-            // ToDo read account data from file (xml/json) and put it into .gitignore
-            // Or from pom.xml
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/phobos?serverTimezone=UTC",
-                    "phobos", "phobos91.PzG");
+                    propertiesInjector.getDb_server(),
+                    propertiesInjector.getDb_user(),
+                    propertiesInjector.getDb_password());
             if (connection != null) {
                 System.out.println("Connection successful");
             } else {
@@ -42,6 +37,7 @@ public class SQLParser {
         }
     }
 
+    // Close current database connection
     public static void disconnect() {
 
         try {
@@ -56,7 +52,9 @@ public class SQLParser {
         }
     }
 
+    // SELECT query to currently connected database
     public static ResultSet select(String tableName) {
+
         String queryStatement;
         PreparedStatement sqlStatement;
         ResultSet result = null;
@@ -73,7 +71,9 @@ public class SQLParser {
         return result;
     }
 
+    // INSERT query to currently connected database
     public static void insert(String queryStatement) {
+
         PreparedStatement sqlStatement;
 
         try {
@@ -84,7 +84,9 @@ public class SQLParser {
         }
     }
 
+    // UPDATE query to currently connected database
     public static void update(String queryStatement) {
+
         PreparedStatement sqlStatement;
 
         try {
