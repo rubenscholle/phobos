@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766946e8-0ee5-4765-9cac-ed8aa7b453aa" name="Default Changelist" comment="Set new token">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Staging" />
+        <entry key="$PROJECT_DIR$" value="Integration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -436,28 +435,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="417" width="528" height="205" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598621923689" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1600586336606">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1601026444525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026444525" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1600586336606">
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1601026444525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026444525" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1600586336606">
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1601026444525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026444525" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1600586336606">
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1601026444525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600586336606" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026444525" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600419511214" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598883832308" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1600272739608">
@@ -484,6 +483,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597686976846" />
+    <state x="184" y="85" key="MergeDialog" timestamp="1601026238415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026238415" />
     <state x="325" y="281" width="1428" height="478" key="MultipleFileMergeDialog" timestamp="1600071606700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -512,10 +515,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="255" width="909" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600506806987" />
-    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1598698387011">
+    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601026225782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598698387011" />
+    <state x="739" y="232" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601026225782" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598621717728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
