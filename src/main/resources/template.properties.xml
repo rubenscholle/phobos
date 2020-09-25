@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<credentials>
-    <bot_token></bot_token>
-    <db_server></db_server>
-    <db_driver></db_driver>
-    <db_user></db_user>
-    <db_password></db_password>
-</credentials>
