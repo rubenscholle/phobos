@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<credentials>
-    <bot_token>NjY3MDYwNTgwODU0NjYxMTIx.Xh9Okw.rVHm3rh2z9bTSeFQ6eGqfcALsu8</bot_token>
-    <db_server>jdbc:mysql://localhost:3306/phobos?serverTimezone=UTC</db_server>
-    <db_driver>com.mysql.cj.jdbc.Driver</db_driver>
-    <db_user>phobos</db_user>
-    <db_password>phobos91.PzG</db_password>
-</credentials>
