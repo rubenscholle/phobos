@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766946e8-0ee5-4765-9cac-ed8aa7b453aa" name="Default Changelist" comment="Set new token">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurrentDateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmoteAdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberJoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuildMemberLeave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PhobosBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PhobosBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReactionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReportFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportFeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReportListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReportService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SQLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -539,11 +528,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/TicTacToe.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
