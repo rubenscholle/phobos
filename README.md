@@ -4,7 +4,7 @@ Java Discord Bot using the Java Discord Api (JDA)
 PHOBOS is a bot for Discord gaming communities.
 Members of the community can report other players violating server rules on the associated gaming servers.
 The bot is attached to an SQL database and tracks the times and number of player reports.
-Server Admins can react to reports amde by the bot and the bot tracks the number of responses and time-to-response.
+Server Admins can react to reports made by the bot and the bot tracks the number of responses and time-to-response.
 The bot is also able to give basic statistics about the ratio of reports / reactions and the number of reactions within certain time windows.
 
 *** Requirements ***
